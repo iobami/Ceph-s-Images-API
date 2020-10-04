@@ -25,15 +25,11 @@ mongoose.connect(url,  {
 const routes = require('./api/routes/todoListRoutes'); //importing route
 routes(app);
 
-// const { readImageFile } = require('./batchUploadQuery');
-// readImageFile();
-
-
 const port = process.env.PORT || 5000;
 
 app.listen(port);
 
 console.log('RESTful API server started on: ' + port);
 
-// const toDo = require('./db/db.js');
-// console.log(toDo);
+// const { batchUpload } = require('./utils');
+// batchUpload();

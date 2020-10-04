@@ -16,6 +16,7 @@ const batchUpload = async () => {
       console.log(JSON.stringify(imageObject));
     }
   }
+  console.log('finished');
 };
 
 module.exports = {

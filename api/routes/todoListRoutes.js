@@ -6,11 +6,7 @@ module.exports = function(app) {
     app.route('/api/v1/images')
         .get(todoList.list_all_tasks)
         .post(todoList.create_a_task);
-
-    app.route('/api/v1/leaderBoard')
-        .get(todoList.leaderBoardList);
-
-
+        
     app.route('/api/v1/images/:id')
         .get(todoList.read_a_task)
         .put(todoList.update_a_task)
